@@ -1,17 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Mi Proyecto 1</title>
+    <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    
-        <h1>Proyecto 1</h1>
-        
-</body>
+    <!-- Contenido de la página va aquí-->
 
+    <!-- Header-->
+     <header class="header">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+     </header>
+
+     <!--MAIN-->
+     <main class="main">
+        <!-- Sección Inicio-->
+        <section class="perfil">
+
+            <img class="imgPerfil" src="img/descarga.jpg" alt="Mi perfil" width="200">
+        <div class="infoPersonal">
+        <h1>Enriquez Guido Facundo.</h1>
+        <h2>Desarrollador Web.</h2>
+        </div>
+        
+        </section>
+        
+        
+        <!--Sección Proyectos-->
+        <section class="proyectos">
+            <div class="title">
+                <h2>Proyectos</h2>
+            </div>
+        
+            <div class="card">
+                <div class="proyecto1"><p>Proyectos: 1</p></div>
+                <div class="proyecto2"><p>Proyectos: 2</p></div>
+                <div class="proyecto3"><p>Proyectos: 3</p></div>
+                <div class="proyecto4"><p>Proyectos: 4</p></div>
+                <div class="proyecto5"><p>Proyectos: 5</p></div>
+                <div class="proyecto6"><p>Proyectos: 6</p></div>
+                
+            </div>
+      
+
+        </section>
+       
+
+     </main>
+
+     <!--FOOTER-->
+     <footer class="footer">
+         <!--Contacto-->
+        <section class="contact">
+            <div class="title">
+                <h2>Para ponerse en contacto </h2>
+            </div>
+            
+            <div class="cardContact">
+                <span><a href="#">Correo</a></span>
+                <span><a href="#">Whatsapp</a></span>
+                <span><a href="#">Redes</a></span>
+            </div>
+        </section>
+        <p> Enriquez Guido Facundo © 2025 </p>
+     </footer>
+</body>
 </html>
