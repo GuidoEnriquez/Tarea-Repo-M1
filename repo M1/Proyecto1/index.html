@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primer Sitio Web</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +16,13 @@
 
     <!-- Header-->
      <header class="header">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
+        <nav class="nav">
+
+            <a href="#"><p>Inicio</p></a>
+            <a href="#proyectos"><p>Proyectos</p></a>
+            <a href="#contacto"><p>Contactos</p></a>
+        </nav>
+    
      </header>
 
      <!--MAIN-->
@@ -37,7 +40,7 @@
         
         
         <!--Sección Proyectos-->
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <div class="title">
                 <h2>Proyectos</h2>
             </div>
@@ -52,7 +55,25 @@
                 
             </div>
       
+        </section>
 
+        <section class="contact" id="contacto">
+             <div class="title">
+                <h2>Para ponerse en contacto </h2>
+            </div>
+
+            <div class="formulario">
+                  <form action="GET">
+                <p>Email:</p>
+                <input type="text">
+                <p>Asunto:</p>
+                <input type="text">
+                <p>Mensaje:</p>
+                <input type="text">
+                <input type="button" value="Enviar">
+            </form>
+            </div>
+          
         </section>
        
 
@@ -62,9 +83,6 @@
      <footer class="footer">
          <!--Contacto-->
         <section class="contact">
-            <div class="title">
-                <h2>Para ponerse en contacto </h2>
-            </div>
             
             <div class="cardContact">
                 <span><a href="#">Correo</a></span>
