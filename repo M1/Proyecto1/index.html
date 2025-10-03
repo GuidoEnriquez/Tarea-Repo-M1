@@ -15,66 +15,83 @@
     <!-- Contenido de la página va aquí-->
 
     <!-- Header-->
-     <header class="header">
-        <nav class="nav">
-
-            <a href="#"><p>Inicio</p></a>
-            <a href="#proyectos"><p>Proyectos</p></a>
-            <a href="#contacto"><p>Contactos</p></a>
-        </nav>
-    
-     </header>
+       <header>
+      <nav class="nav">
+        <div class="menu">
+          <a href="#"><p>Inico</p></a>
+          <a href="#"><p>Peliculas</p></a>
+          <a href="#"><p>Series</p></a>
+          <a href="#"> <p>Populares</p></a>
+        </div>
+        
+      </nav>
+    </header>
 
      <!--MAIN-->
      <main class="main">
-        <!-- Sección Inicio-->
-        <section class="perfil">
-
-            <img class="imgPerfil" src="img/descarga.jpg" alt="Mi perfil" width="200">
-        <div class="infoPersonal">
-        <h1>Enriquez Guido Facundo.</h1>
-        <h2>Desarrollador Web.</h2>
-        </div>
-        
-        </section>
+    
         
         
         <!--Sección Proyectos-->
         <section class="proyectos" id="proyectos">
-            <div class="title">
-                <h2>Proyectos</h2>
-            </div>
+           <section class="card-populares">
+
+                      <div class="card"><p>Pelicula: 1</p></div>
+                      <div class="card"><p>Pelicula: 2</p></div>
+                      <div class="card"><p>Pelicula: 3</p></div>
+                      <div class="card"><p>Serie: 1</p></div>
+                      <div class="card"><p>Serie: 2</p></div>
+                      <div class="card"><p>Serie: 3</p></div>
+            
+           </section>
         
-            <div class="card">
-                <div class="proyecto1"><p>Proyectos: 1</p></div>
-                <div class="proyecto2"><p>Proyectos: 2</p></div>
-                <div class="proyecto3"><p>Proyectos: 3</p></div>
-                <div class="proyecto4"><p>Proyectos: 4</p></div>
-                <div class="proyecto5"><p>Proyectos: 5</p></div>
-                <div class="proyecto6"><p>Proyectos: 6</p></div>
+            <section class="peliculas">
+                  <div class="title">
+                <h2>Peliculas</h2>
+                  </div>
+                  <div class="card-pelicula">
+
+                      <div class="proyecto1"><p>Pelicula: 1</p></div>
+                      <div class="proyecto2"><p>Pelicula: 2</p></div>
+                      <div class="proyecto3"><p>Pelicula: 3</p></div>
+                  </div>
                 
-            </div>
+            </section>
+
+             <section class="serie">
+                  <div class="title">
+                <h2>Series</h2>
+                  </div>
+                  <div class="card-serie">
+
+                      <div class="proyecto1"><p>Serie: 1</p></div>
+                      <div class="proyecto2"><p>Serie: 2</p></div>
+                      <div class="proyecto3"><p>Serie: 3</p></div>
+                  </div>
+            
+                
+             </section>
       
+             <section class="contact" id="contacto">
+                  <div class="title">
+                     <h2>Agregar Pelicula o Serie </h2>
+                 </div>
+     
+                 <div class="formulario">
+                       <form action="">
+                     <p>Titulo:</p>
+                     <input type="text">
+                     <p>Tipo:</p>
+                     <input type="text">
+                     <p>URL:</p>
+                     <input type="text">
+                     <input type="button" value="Enviar">
+                 </form>
+                 </div>
+               
+             </section>
         </section>
 
-        <section class="contact" id="contacto">
-             <div class="title">
-                <h2>Para ponerse en contacto </h2>
-            </div>
-
-            <div class="formulario">
-                  <form action="GET">
-                <p>Email:</p>
-                <input type="text">
-                <p>Asunto:</p>
-                <input type="text">
-                <p>Mensaje:</p>
-                <input type="text">
-                <input type="button" value="Enviar">
-            </form>
-            </div>
-          
-        </section>
        
 
      </main>
