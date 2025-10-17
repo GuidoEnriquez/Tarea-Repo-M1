@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let playTimeout = null;
   let nextTimeout = null;
 
-  // ---reproducir slides ---
+  // ---Reproducir slides ---
   function playActiveVideo() {
     clearTimeout(playTimeout);
     clearTimeout(nextTimeout);
