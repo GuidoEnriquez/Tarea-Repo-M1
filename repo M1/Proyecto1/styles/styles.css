@@ -51,7 +51,36 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  margin-top: 1rem;
+}
+#carouselExampleIndicators {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  position: relative;
+  left: 0;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+.carousel-item {
+  height: 600px; 
+}
+
+button span{
+  padding: 40px;
+ 
 }
 
 .peliculas, .serie{
@@ -63,44 +92,37 @@ body {
  color: #fff;
 }
 
-.card-pelicula, .card-serie{
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
- 
+.peliculas, .series {
+  padding: 20px;
 }
 
-.card-pelicula p, .card-serie p{
-  border-radius: 8px;
-  height: 38rem;
-  width: 20rem;
-  background-color: #b3b3b3;
-  display: flex;             
-  justify-content: center;    
-  align-items: center;        
+.card-pelicula, .card-serie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.movie, .serie {
+  width: 250px; 
   text-align: center;
- 
 }
 
-.card-pelicula p:hover, .card-serie p:hover{
-  background-color: #333;
-  color: white;
-  transition: 0.5s;
+.movie img, .serie img {
+  width: 100%;
+  height: 350px; 
+  border-radius: 10px;
+  object-fit: cover; 
+  display: block;
 }
 
-.card-populares{
-  display: flex;
-  gap: 1.2rem;
-  margin-bottom: 5rem;
-  overflow-x: auto;              
-  scroll-snap-type: x mandatory; 
-  -webkit-overflow-scrolling: touch; 
+.movie p, .serie p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #fff;
 }
 
-.card-populares > div {
-  scroll-snap-align: center; 
-  flex: 0 0 auto;               
-}
 
 .card{
   border-radius: 8px;
@@ -114,13 +136,17 @@ body {
   text-align: center;
 }
 
-.populares {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  
-   .card-populares {
-    scroll-snap-align: center;
-  }
+.formulario{
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.formulario p{
+   margin-top: 8px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #fff;
 }
 
 .contact{

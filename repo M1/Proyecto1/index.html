@@ -10,6 +10,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <!-- Contenido de la página va aquí-->
@@ -19,9 +21,9 @@
       <nav class="nav">
         <div class="menu">
           <a href="#"><p>Inico</p></a>
-          <a href="#"><p>Peliculas</p></a>
-          <a href="#"><p>Series</p></a>
-          <a href="#"> <p>Populares</p></a>
+          <a href="#peliculas"><p>Peliculas</p></a>
+          <a href="#series"><p>Series</p></a>
+          <a href="#contacto"><p>Contacto</p></a>
         </div>
         
       </nav>
@@ -29,44 +31,117 @@
 
      <!--MAIN-->
      <main class="main">
-    
-        
-        
-        <!--Sección Proyectos-->
-        <section class="proyectos" id="proyectos">
-           <section class="card-populares">
+      
+        <!--Sección -->
+        <section class="proyectos">
 
-                      <div class="card"><p>Pelicula: 1</p></div>
-                      <div class="card"><p>Pelicula: 2</p></div>
-                      <div class="card"><p>Pelicula: 3</p></div>
-                      <div class="card"><p>Serie: 1</p></div>
-                      <div class="card"><p>Serie: 2</p></div>
-                      <div class="card"><p>Serie: 3</p></div>
-            
+           <section id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="video-wrapper">
+                  <iframe
+                    id="video"
+                    class="d-block w-100"
+                    src="https://www.youtube.com/embed/FVQeKimcpuA?si=-3IWXmheSPtjGRZg&rel=0&controls=0&modestbranding=1&showinfo=0&mute=1"
+                    title="Trailer 1"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <iframe
+                    id="video"
+                    class="d-block w-100"
+                    src="https://www.youtube.com/embed/_YUzQa_1RCE?si=-3IWXmheSPtjGRZg&rel=0&controls=0&modestbranding=1&showinfo=0&mute=1"
+                    title="Trailer 2"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <iframe
+                    id="video"
+                    class="d-block w-100"
+                    src="https://www.youtube.com/embed/zvahPW14Qos?si=-3IWXmheSPtjGRZg&rel=0&controls=0&modestbranding=1&showinfo=0&mute=1"
+                    title="Trailer 3"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        
            </section>
         
-            <section class="peliculas">
+            <section class="peliculas" id="peliculas">
                   <div class="title">
                 <h2>Peliculas</h2>
                   </div>
+
                   <div class="card-pelicula">
 
-                      <div class="proyecto1"><p>Pelicula: 1</p></div>
-                      <div class="proyecto2"><p>Pelicula: 2</p></div>
-                      <div class="proyecto3"><p>Pelicula: 3</p></div>
+                      <div class="movie">
+                        <img src="img/superman.jpeg" alt="Superman">
+                        <p>Superman</p>
+                      </div>
+                      <div class="movie">
+                        <img src="img/Dune_two.jpg" alt="Dune: Parte Dos">
+                        <p>Dune: Parte Dos</p>
+                      </div>
+                      <div class="movie">
+                        <img src="img/TronAres.jpg" alt="Tron: Ares">
+                        <p>Tron: Ares</p>
+                      </div>
+                       <div class="movie">
+                        <img src="img/batman.jpg" alt="Batman">
+                        <p>Batman</p>
+                      </div>
                   </div>
                 
             </section>
 
-             <section class="serie">
+             <section class="Series" id="series">
                   <div class="title">
                 <h2>Series</h2>
                   </div>
                   <div class="card-serie">
-
-                      <div class="proyecto1"><p>Serie: 1</p></div>
-                      <div class="proyecto2"><p>Serie: 2</p></div>
-                      <div class="proyecto3"><p>Serie: 3</p></div>
+                      <div class="serie">
+                        <img src="img/Got.jpg" alt="Game of Thrones">
+                        <p>Game of Thrones</p>
+                      </div>
+                      <div class="serie">
+                        <img src="img/dexter.jpg" alt="Dexter">
+                        <p>Dexter</p>
+                      </div>
+                      <div class="serie">
+                        <img src="img/dark.jpg" alt="Dark">
+                        <p>Dark</p>
+                      </div>
+                       <div class="serie">
+                        <img src="img/Peaky_Blinders_Poster.jpg" alt="Peaky Blinders">
+                        <p>Peaky Blinders</p>
+                      </div>
+                 
                   </div>
             
                 
@@ -78,21 +153,24 @@
                  </div>
      
                  <div class="formulario">
-                       <form action="">
-                     <p>Titulo:</p>
-                     <input type="text">
-                     <p>Tipo:</p>
-                     <input type="text">
-                     <p>URL:</p>
-                     <input type="text">
-                     <input type="button" value="Enviar">
-                 </form>
+                       <form>
+                        <div class="mb-3">
+                          <p for="" class="form-label">Titulo</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <p class="form-label">URL Video:</p>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <p class="form-label">URL imagen:</p>
+                          <input type="text" class="form-control mb-3">
+                          <input type="button" value="Enviar" class="btn btn-primary">
+                        </div>
+                      </form>
                  </div>
-               
              </section>
         </section>
-
-       
 
      </main>
 
@@ -110,4 +188,6 @@
         <p> Enriquez Guido Facundo © 2025 </p>
      </footer>
 </body>
+<script src="scripts/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
