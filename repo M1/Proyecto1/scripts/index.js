@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let playTimeout = null;
   let nextTimeout = null;
 
-  // --- código existente para reproducir slides ---
+  // ---reproducir slides ---
   function playActiveVideo() {
     clearTimeout(playTimeout);
     clearTimeout(nextTimeout);
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   playActiveVideo();
 
-  // --- NUEVO: manejo del formulario que SOLO agrega cards (película o serie) ---
+  // --- Agregar pelicula o Serie ---
   const form = document.getElementById('addForm');
   const peliculasContainer = document.querySelector('.card-pelicula');
   const seriesContainer = document.querySelector('.card-serie');
