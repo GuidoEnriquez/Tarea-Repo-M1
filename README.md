@@ -1,2 +1,2 @@
--Actividades de JS
+-Actividades de JS. \t
 -Proyecto de HTML, CSS y JS
