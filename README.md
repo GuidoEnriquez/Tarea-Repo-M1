@@ -1,1 +1,2 @@
-Tarea de Html Css
+-Actividades de JS
+-Proyecto de HTML, CSS y JS
